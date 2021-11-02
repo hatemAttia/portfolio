@@ -1,0 +1,11 @@
+.container-loader{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    background-color: black;
+    opacity: 0.6;    
+}
+.fb-customerchat{
+ 
+}

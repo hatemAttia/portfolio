@@ -1,0 +1,278 @@
+<ng-template #content let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">{{modalData.title}}</h4>
+    <button
+      type="button"
+      class="close"
+      aria-label="Close"
+      (click)="modal.dismiss('Cross click')"
+    >
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div class="row" style="width: 100%;">
+      <div class="col-6" style="height: 300px;">
+        <img
+          src="assets/images/{{modalData.images[0]}}"
+          style="height: 300px; max-width: 200%;"
+          class="img-responsive"
+          alt="HTML5 Bootstrap Template by colorlib.com"
+        />
+      </div>
+      <div class="col-6" *ngIf="modalData.images[1]">
+        <img
+          src="assets/images/{{modalData.images[1]}}"
+          style="height: 300px; width: 300px"
+          class="img-responsive"
+          alt="HTML5 Bootstrap Template by colorlib.com"
+        />
+      </div>
+    </div>
+    <div class="row" style="padding: 20px">
+      <span
+              ><small>{{ modalData.date }} </small> |
+              <small> {{ modalData.equipe }} </small>
+            </span>
+    </div>
+    <div class="row" style="padding: 25px">
+      <p>
+        {{modalData.description}}
+      </p>
+    </div>
+  </div>
+
+  
+</ng-template>
+
+<section class="colorlib-work" data-section="work">
+  <div class="colorlib-narrow-content">
+    <div class="row">
+      <div
+        class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
+        data-animate-effect="fadeInLeft"
+      >
+        <h2 class="colorlib-heading animate-box">PROJETS RÉALISÉS </h2>
+      </div>
+    </div>
+    <div
+      class="row row-bottom-padded-sm animate-box"
+      data-animate-effect="fadeInLeft"
+    >
+      <!-- <div class="col-md-12">
+        <p class="work-menu">
+          <span><a href="#" class="active">Graphic Design</a></span>
+          <span><a href="#">Web Design</a></span>
+          <span><a href="#">Software</a></span>
+          <span><a href="#">Apps</a></span>
+        </p>
+      </div> -->
+    </div>
+    <div class="row">
+      <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+        <div
+          class="project"
+          style="background-image: url(assets/images/tuniservice.png)"
+        >
+          <div class="desc">
+            <div class="con">
+              <h3><a href="work.html">TuniService</a></h3>
+              <span
+                >Développement front-end d’une application mobile connectée:
+                TuniService. ● APIs: API Rest, Leaflet, Here. ● Langage:
+                TypeScript.● FrameWork: Angular 7, IONIC 4</span
+              >
+             
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 animate-box" data-animate-effect="fadeInTop">
+        <div
+          class="project"
+          style="background-image: url(assets/images/arriba.png)"
+        >
+          <div class="desc">
+            <div class="con">
+              <h3><a href="work.html">Arriba</a></h3>
+              <span
+                >Conception et réalisation d'une application mobile de livraison
+                de repas ● Langage: TypeScript ● FrameWork:Bootsrap, Ionc
+                6</span
+              >
+            
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+        <div
+          class="project"
+          style="background-image: url(assets/images/tuniprof.png)"
+        >
+          <div class="desc">
+            <div class="con">
+              <h3><a href="work.html">TUNIPROF</a></h3>
+              <span
+                >Conception et réalisation d'une application Web d'annuaire des
+                enseignant ● APIs: API Rest ● Langage: TypeScript,JavaScript ●
+                FrameWork:Bootsrap, Angular 8,Express.js RunTime:NodeJs
+              </span>
+              <!-- <p class="icon">
+                <span
+                  ><a href="#"><i class="icon-share3"></i></a
+                ></span>
+                <span
+                  ><a href="#"><i class="icon-eye"></i> 100</a></span
+                >
+                <span
+                  ><a href="#"><i class="icon-heart"></i> 49</a></span
+                >
+              </p> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-6 animate-box" data-animate-effect="fadeInBottom">
+        <div
+          class="project"
+          style="background-image: url(assets/images/tfarhida.png)"
+        >
+          <div class="desc">
+            <div class="con">
+              <h3><a href="work.html">TFARHIDA</a></h3>
+              <span>Site WEB <strong>ANGULAR</strong></span>
+              <!-- <p class="icon">
+                <span
+                  ><a href="#"><i class="icon-share3"></i></a
+                ></span>
+                <span
+                  ><a href="#"><i class="icon-eye"></i> 100</a></span
+                >
+                <span
+                  ><a href="#"><i class="icon-heart"></i> 49</a></span
+                >
+              </p> -->
+            </div>
+          </div>
+        </div>
+      </div>
+   <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+        <div
+          class="project"
+          style="background-image: url(assets/images/sym2.png)"
+        >
+          <div class="desc">
+            <div class="con">
+              <h3><a href="work.html">Aggency</a></h3>
+              <span>Site web <strong>SYMFONY</strong></span>
+              <!-- <p class="icon">
+                <span
+                  ><a href="#"><i class="icon-share3"></i></a
+                ></span>
+                <span
+                  ><a href="#"><i class="icon-eye"></i> 100</a></span
+                >
+                <span
+                  ><a href="#"><i class="icon-heart"></i> 49</a></span
+                >
+              </p> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+        <div
+          class="project"
+          style="background-image: url(assets/images/sym1.png)"
+        >
+          <div class="desc">
+            <div class="con">
+              <h3><a href="work.html">Doctor Health!</a></h3>
+              <span>Site web <strong>SYMFONY</strong></span>
+              <!-- <p class="icon">
+                <span
+                  ><a href="#"><i class="icon-share3"></i></a
+                ></span>
+                <span
+                  ><a href="#"><i class="icon-eye"></i> 100</a></span
+                >
+                <span
+                  ><a href="#"><i class="icon-heart"></i> 49</a></span
+                >
+              </p> -->
+            </div>
+          </div>
+        </div>
+      </div> 
+      <div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+        <div
+          class="project"
+          style="background-image: url(assets/images/carbonCode1.png)"
+        >
+          <div class="desc">
+            <div class="con">
+              <h3><a href="work.html">CarboneCode</a></h3>
+              <span>Site web <strong>ANGULAR, NODEJS</strong></span>
+              <!-- <p class="icon">
+                <span
+                  ><a href="#"><i class="icon-share3"></i></a
+                ></span>
+                <span
+                  ><a href="#"><i class="icon-eye"></i> 100</a></span
+                >
+                <span
+                  ><a href="#"><i class="icon-heart"></i> 49</a></span
+                >
+              </p> -->
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div>
+    
+  </div>
+</section>
+
+<section class="colorlib-blog" data-section="blog">
+  <div class="colorlib-narrow-content">
+    <div class="row">
+      <div
+        class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
+        data-animate-effect="fadeInLeft"
+      >
+        <h2 class="colorlib-heading">les Défis</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div 
+        *ngFor="let challange of challanges" style="cursor: pointer; "
+        class="col-md-4 col-sm-6 animate-box"
+        data-animate-effect="fadeInLeft"
+        (click)="open(content,challange)"
+      >
+        <div class="blog-entry text-justify " >
+          <div >
+          <a class="blog-img d-flex align-items-center"   style="height: 240px;width: 100%;"
+            ><img 
+              src="assets/images/{{ challange.images[0] }}"
+              class="img-responsive "
+              alt="HTML5 Bootstrap Template by colorlib.com"
+          /></a>
+         </div>
+          <div class="desc">
+            <span
+              ><small>{{ challange.date }} </small> |
+              <small> {{ challange.equipe }} </small>
+            </span>
+            <h3><a >{{ challange.title }}</a></h3>
+            <p>
+              {{ challange.description | truncate: 100:".." }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
